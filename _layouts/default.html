@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - 项博书教授</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    {% include header.html %}
+
+    <!-- 主内容容器 -->
+    <div class="container">
+        <div class="sidebar">
+            <img src="{{ site.baseurl }}/assets/profile-pic.jpg" alt="项博书">
+            <h1>项博书，教授</h1>
+            <p>博士，现任南京某大学教授，研究方向为视频理解、动作分析等人类中心问题。</p>
+            <p><strong>邮箱:</strong> <a href="mailto:shuxb@njust.edu.cn">shuxb@njust.edu.cn</a></p>
+            <p><strong>地址:</strong> 南京市, 中国</p>
+        </div>
+
+        <div class="main-content">
+            {{ content }}
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    {% include footer.html %}
+
+</body>
+</html>
